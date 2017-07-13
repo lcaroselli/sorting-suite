@@ -8,7 +8,7 @@ const quickSort = (array) => {
   if (array.length < 2) {
     return array;
   } else {
-    var pivot = array[array.length - 1]; //choosing the right-most element in the array, so that index
+    var pivot = array[array.length - 1];
 
     var left = [];
 
