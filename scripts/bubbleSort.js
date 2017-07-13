@@ -1,7 +1,8 @@
 var chai = require('chai');
 var expect = chai.expect;
 
-let letters = ['D', 'A', 'F', 'J', 'C', 'B'];
+
+let letters = ['d', 'b', 'a', 'c'];
 
 const bubbleSort = (array) => {
   let bubbleArray = array;
@@ -19,7 +20,3 @@ console.log (letters);
 
 
 export default bubbleSort;
-
-
-// if (bubbleArray[j] > bubbleArray[j + 1]) {
-//   [bubbleArray[j], bubbleArray[j + 1]] = [bubbleArray[j + 1], bubbleArray[j]];

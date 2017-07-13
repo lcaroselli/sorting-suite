@@ -1,7 +1,7 @@
 var chai = require('chai');
 var expect = chai.expect;
 
-let numbers = [340, 93, 12, 72, 28, 4, 55];
+let letters = ["d", "b", "a", "c"];
 
 const insertionSort = (array) => {
   let insertionArray = array;
@@ -15,15 +15,15 @@ const insertionSort = (array) => {
             insertionArray[j + 1] = insertionArray[j]; //...Shift the number -- assign j to the the next index above j, because it is larger than the current element being evaluated
             // j+1 is the new index value of j element (the one that is larger than current element)
         }
-        //THIS PART IS CONFUSING....
+        //assign that space to the current element
         insertionArray[j + 1] = currentElement;
     }
 
   return insertionArray;
 }
 
-insertionSort(numbers);
-console.log(numbers);
+insertionSort(letters);
+console.log(letters);
 
 
 export default insertionSort;
