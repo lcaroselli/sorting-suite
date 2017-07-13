@@ -1,10 +1,12 @@
-let generateRandomNumber = (num) => {
-  let randomNumberArray = [];
-  let num = num;
+function generateRandomNumber(num) {
+  let numberArray = [];
 
-  for (let i = 0; i < num; i++){
-    randomNumberArray.push(Math.floor((Math.random() * 1000) +1))
-  };
+  for (let i = 0; i < num; i++) {
+    let randomNumber = (Math.floor(Math.random() * 100) -1);
+
+    numberArray.push(randomNumber);
+  }
+  return numberArray;
 }
 
 export default generateRandomNumber;

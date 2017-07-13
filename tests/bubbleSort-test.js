@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import bubbleSort from '../scripts/bubbleSort.js';
 import generateRandomNumber from '../scripts/randomNumber.js';
 
-describe('Bubble Sort with filter', () => {
+describe('Bubble Sort', () => {
 
   it ('should be a function', () => {
   expect(bubbleSort).be.function;
@@ -21,10 +21,10 @@ describe('Bubble Sort with filter', () => {
     });
 
   it ('should sort a large data set of numbers', () => {
-    let randomNumber = generateRandomNumber(800);
-    let sorted = bubbleSort(randomNumber);
+    let randomNumberArray = generateRandomNumber(4000);
 
-    expect(sorted).to.deep.equal(randomNumber);
+    let sortedArray = [ ...randomNumberArray ].sort( (a, b) => a - b );
+
+    expect(bubbleSort(randomNumberArray)).to.be.deep.equal(sortedArray);
   })
-
 });
