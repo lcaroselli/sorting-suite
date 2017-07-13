@@ -1,7 +1,6 @@
 var chai = require('chai');
 var expect = chai.expect;
 
-
 let letters = ['d', 'b', 'a', 'c'];
 
 const bubbleSort = (array) => {
