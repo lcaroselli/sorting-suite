@@ -6,7 +6,7 @@ describe('Quick Sort', () => {
 
   it ('should be a function', () => {
   expect(quickSort).be.function;
-});
+  });
 
   it ('should sort an array of alphanumeric values', () => {
     let alphabetArray = ['Y', 'B', 'H', 'A', 'S'];
@@ -18,9 +18,9 @@ describe('Quick Sort', () => {
     let numberArray = [23, 67, 8, 12, 2];
 
     expect(quickSort(numberArray)).to.deep.equal([2, 8, 12, 23, 67]);
-    });
+  });
 
-  it ('should sort a large data set of numbers', () => {
+  it ('should sort a large data set', () => {
     let randomNumberArray = generateRandomNumber(10000);
 
     let sortedArray = [ ...randomNumberArray ].sort( (a, b) => a - b );

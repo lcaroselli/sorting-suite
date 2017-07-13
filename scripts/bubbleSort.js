@@ -1,5 +1,5 @@
-var chai = require('chai');
-var expect = chai.expect;
+const chai = require('chai');
+const expect = chai.expect;
 
 let letters = ['d', 'b', 'a', 'c'];
 

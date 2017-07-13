@@ -1,5 +1,5 @@
-var chai = require('chai');
-var expect = chai.expect;
+const chai = require('chai');
+const expect = chai.expect;
 
 let letters = ["d", "b", "a", "c"];
 
@@ -15,11 +15,7 @@ const quickSort = (array) => {
     var right = [];
 
     for ( var i = 0; i < array.length - 1; i++) {
-      if (array[i] < pivot) {
-        left.push(array[i]);
-      } else {
-        right.push(array[i]);
-      }
+      array[i] < pivot ? left.push(array[i]) : right.push(array[i]);
     }
   }
   return [...quickSort(left), pivot, ...quickSort(right)];
