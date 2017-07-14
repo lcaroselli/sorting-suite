@@ -1,8 +1,3 @@
-const chai = require('chai');
-const expect = chai.expect;
-
-let letters = ["d", "b", "a", "c"];
-
 const quickSort = (array) => {
 
   if (array.length < 2) {
@@ -20,7 +15,5 @@ const quickSort = (array) => {
   }
   return [...quickSort(left), pivot, ...quickSort(right)];
 }
-
-quickSort(letters);
 
 export default quickSort;

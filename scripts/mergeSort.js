@@ -1,8 +1,3 @@
-const chai = require('chai');
-const expect = chai.expect;
-
-let letters = ["d", "b", "a", "c"];
-
 function mergeSort (array) {
   if (array.length === 1) {
     return array;
@@ -28,11 +23,8 @@ function mergeArrays(array1, array2) {
       sortedArray.push(array2[0]);
       array2.shift();
     }
-
     sortedArray.push(...array1, ...array2);
     return sortedArray;
 }
-
-mergeSort(letters);
 
 export default mergeSort;

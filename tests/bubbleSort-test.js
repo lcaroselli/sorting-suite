@@ -21,7 +21,7 @@ describe('Bubble Sort', () => {
   });
 
   it ('should sort a large data set', () => {
-    let randomNumberArray = generateRandomNumber(4000);
+    let randomNumberArray = generateRandomNumber(1000);
 
     let sortedArray = [ ...randomNumberArray ].sort( (a, b) => a - b );
 
